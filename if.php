@@ -15,7 +15,7 @@ if($score>=60){
 }
 
 echo"<br>";
-
+// 不論前面是否符合，都要跑5次
 if($score>=90 && $score<=100){
     $level="A";
 }
@@ -32,6 +32,22 @@ if($score>=0 && $score<=59){
     $level="E";
 }
 
+// 要跑1~5次，就當前面符合了，就會停止
+if($score>=90 && $score<=100){
+    $level="A";
+}
+else if($score>=80 && $score<=89){
+    $level="B";
+}
+else if($score>=70 && $score<=79){
+    $level="C";
+}
+else if($score>=60 && $score<=69){
+    $level="D";
+}
+else if($score>=0 && $score<=59){
+    $level="E";
+}
 
 // $level='A';
 

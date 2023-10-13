@@ -19,6 +19,10 @@ while($i<=100){
     echo $sum . '+' . $i .'=';
     echo $sum+$i;
     echo "<br>"; 
+    // 將目前的數字加到總和中
+    $sum += $i;
+
+    // 增加計數器
     // $sum+=$i;
     $i++;
 
